@@ -1,0 +1,69 @@
+main{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    height:fit-content
+}
+.leftContainer{
+    border: 1px solid black;
+    width:200px;
+    background: #023459;
+    font:white;
+    padding:5px;
+    padding-top:20px;
+}
+.leftContainer * span{
+    color: white;
+}
+
+.leftContainer > h3{
+    color: white;
+    text-decoration: underline;
+}
+.leftContainer > p{
+    color: white;
+    text-decoration: underline;
+}
+.skills{
+    color: white;
+
+    list-style-position: inside;
+    padding-left:10px;
+}
+#profile{
+    display:flex;
+    width:150px;
+    height:150px;
+    margin:50px auto;
+}
+div > img{
+    width:20px;
+    height:20px;
+    padding-right:7px;
+}
+.rightContainer{
+    border:1px solid #023459;
+    width: 60%;
+    min-width:350px;
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    padding:10px;
+
+    
+}
+.header{
+    background-color:#e0e6eb;
+    width:100%;
+    text-align:center
+}
+.rightContainer h3{
+    text-decoration: underline;
+}
+.work{
+    padding:10px;
+}
+hr{
+    color:black;
+    width:55%;
+}
