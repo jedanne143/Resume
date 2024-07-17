@@ -11,6 +11,7 @@ main{
     font:white;
     padding:5px;
     padding-top:20px;
+    min-width:195px;
 }
 .leftContainer * span{
     color: white;
@@ -32,10 +33,21 @@ main{
 }
 #profile{
     display:flex;
-    width:150px;
-    height:150px;
+    width:120px;
+    height:120px;
     margin:50px auto;
+    border: 5px solid white;
+    border-radius:50%;
 }
+#profile:hover{
+    transform: scale(1.2);
+    border-color:#fcffe2;
+}
+.header:hover{
+    background-color: #8EB6CF;
+    color:#023459;
+}
+
 div > img{
     width:20px;
     height:20px;
@@ -67,3 +79,18 @@ hr{
     color:black;
     width:55%;
 }
+@media (max-width: 600px) {
+    main{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .leftContainer{
+        width:100%;
+        text-wrap: wrap;
+    }
+    .rightContainer{
+        width:100%;
+        text-wrap: wrap;
+        background-color: #acc8d9;
+    }
+  }
