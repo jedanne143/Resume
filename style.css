@@ -1,11 +1,12 @@
 main{
     display:flex;
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: center;
-    height:fit-content
 }
 .leftContainer{
     border: 1px solid black;
+    box-sizing: border-box;
     width:200px;
     background: #023459;
     font:white;
@@ -13,7 +14,10 @@ main{
     padding-top:20px;
     min-width:195px;
 }
-.leftContainer * span{
+.leftContainer span{
+    color: white;
+}
+.leftContainer a{
     color: white;
 }
 
@@ -31,6 +35,11 @@ main{
     list-style-position: inside;
     padding-left:10px;
 }
+.contact{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
 #profile{
     display:flex;
     width:120px;
@@ -38,10 +47,11 @@ main{
     margin:50px auto;
     border: 5px solid white;
     border-radius:50%;
+    padding-top:10px;
 }
 #profile:hover{
-    transform: scale(1.2);
-    border-color:#fcffe2;
+    transform: scale(1.1);
+    border-color: #8EB6CF;
 }
 .header:hover{
     background-color: #8EB6CF;
@@ -50,8 +60,9 @@ main{
 
 div > img{
     width:20px;
-    height:20px;
+    height:auto;
     padding-right:7px;
+    margin-top:3px;
 }
 .rightContainer{
     border:1px solid #023459;
@@ -60,14 +71,18 @@ div > img{
     display:flex;
     flex-direction: column;
     text-align: justify;
-    padding:10px;
-
-    
+    padding:10px;  
+    box-sizing: border-box;
 }
 .header{
+    display:flex;
+    flex-direction: column;
     background-color:#e0e6eb;
     width:100%;
     text-align:center
+}
+#name:hover{
+    transform: scale(1.1)
 }
 .rightContainer h3{
     text-decoration: underline;
@@ -83,14 +98,29 @@ hr{
     main{
         display:flex;
         flex-direction: column-reverse;
+        width:100%;
     }
     .leftContainer{
         width:100%;
         text-wrap: wrap;
+        padding-left:15px;
     }
     .rightContainer{
+        display:flex;
         width:100%;
+        padding:10px;
         text-wrap: wrap;
         background-color: #acc8d9;
+    }
+    .header{
+        display:flex;
+
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        box-sizing: border-box;
+        padding:10px;
     }
   }
