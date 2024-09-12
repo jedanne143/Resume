@@ -81,6 +81,9 @@ div > img{
     width:100%;
     text-align:center
 }
+#name{
+    text-transform: uppercase;
+}
 #name:hover{
     transform: scale(1.1)
 }
